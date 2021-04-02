@@ -4,17 +4,31 @@
 // Não é divisivel por 3 ou 5 => entrada
 // Não é um número = Não é um número
 
-const resultado = fizzBuzz(10);
-console.log (resultado);
+ const resultado = fizzBuzz(15);
+ console.log (resultado);
 
-function fizzBuzz(entrada){
-    if (typeof entrada !== 'number')
-        return 'Não é um número';
-    if ((entrada %3 === 0) && (entrada %5 === 0))
-        return 'FizzBuzz';
-    if (entrada %3 === 0)
-        return 'Fizz';
-    if (entrada %5 === 0)
-        return 'Buzz';   
+ function fizzBuzz(entrada){
+     if (typeof entrada !== 'number')
+         return 'Não é um número';
+      if ((entrada %3 === 0) && (entrada %5 === 0))
+          return 'FizzBuzz';
+      if (entrada %3 === 0)
+          return 'Fizz';
+      if (entrada %5 === 0)
+          return 'Buzz';   
 
+ }
+
+for (let i = 1; i < 100; i ++){
+    if ((i % 3 == 0) && (i % 5 == 0))
+        console.log('Fizbuzz', i);
+    else if (i % 3 == 0)
+        console.log('Fizz', i);
+    else if (i % 5 == 0)
+        console.log ('Buzz', i);
+    else
+        console.log(i);
+   
 }
+
+
