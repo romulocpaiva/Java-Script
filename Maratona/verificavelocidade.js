@@ -1,10 +1,10 @@
 // velocidade máxima de até 70
 // a cada 5 acima do limite você ganha 1 ponto
 // Math.Floor()
-//caso pontos maior que 12 -> "carteira suspensa"
+//caso pontos maior que > 12  "carteira suspensa"
 
 let permitida = 70;
-let kmh = verificaVelocidade(84);
+let kmh = verificaVelocidade(150);
 
 
 function verificaVelocidade(velocidade){
